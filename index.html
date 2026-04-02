@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Upendra | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/3135/3135715.png">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header class="header">
+    <div class="logo">Upendra<span>.</span></div>
+    <nav class="nav">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#education">Education</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button class="menu-btn" onclick="toggleMenu()">☰</button>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <h1>Hello, I'm <span>Erukala Upendra</span></h1>
+      <h2>Python Full Stack Developer (Django)</h2>
+      <p>
+        Resourceful computer applications graduate with strong skills in Full Stack Development,
+        specializing in Django-driven web solutions.
+      </p>
+
+      <div class="hero-buttons">
+        <a href="#projects" class="btn primary">View Projects</a>
+        <a href="#contact" class="btn secondary">Hire Me</a>
+      </div>
+
+      <div class="social-links">
+        <a href="https://www.linkedin.com/in/erukala-upendra-a592ab288" target="_blank">LinkedIn</a>
+        <a href="mailto:upendra3714@gmail.com">Email</a>
+      </div>
+    </div>
+
+    <div class="hero-image">
+      <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="Profile">
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="section">
+    <h2 class="section-title">About Me</h2>
+    <div class="about-container">
+      <p>
+        I am <b>Erukala Upendra</b>, currently pursuing MCA. I have hands-on expertise in
+        <b>Python Full Stack Development</b>, with strong knowledge in Django, SQL, HTML, CSS, and JavaScript.
+        I enjoy building scalable applications and improving user experiences through modern web development.
+      </p>
+
+      <div class="about-box">
+        <div>
+          <h3>📍 Location</h3>
+          <p>Bangalore, India</p>
+        </div>
+        <div>
+          <h3>📧 Email</h3>
+          <p>upendra3714@gmail.com</p>
+        </div>
+        <div>
+          <h3>📞 Phone</h3>
+          <p>+91 9347908285</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="section gray">
+    <h2 class="section-title">Skills</h2>
+
+    <div class="skills-grid">
+      <div class="skill-card">Python</div>
+      <div class="skill-card">Django</div>
+      <div class="skill-card">SQL</div>
+      <div class="skill-card">HTML</div>
+      <div class="skill-card">CSS</div>
+      <div class="skill-card">JavaScript</div>
+      <div class="skill-card">Database Design</div>
+      <div class="skill-card">ERD Modelling</div>
+      <div class="skill-card">Responsive Web Design</div>
+      <div class="skill-card">Admin Dashboard Development</div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="section">
+    <h2 class="section-title">Projects</h2>
+
+    <div class="project-grid">
+
+      <div class="project-card">
+        <h3>Fitness Tracker System</h3>
+        <p>
+          Developed a web-based fitness management platform to track workouts, diet plans,
+          BMI calculation, attendance, and progress reports.
+        </p>
+        <p class="tech"><b>Tech:</b> Django, Python, HTML, CSS, JavaScript, SQL</p>
+        <a href="#" class="btn small">Project Link</a>
+      </div>
+
+      <div class="project-card">
+        <h3>Personal Portfolio Website</h3>
+        <p>
+          Designed a professional personal portfolio website showcasing skills, projects,
+          and achievements with a clean UI.
+        </p>
+        <p class="tech"><b>Tech:</b> HTML, CSS, JavaScript</p>
+        <a href="#" class="btn small">Project Link</a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Education -->
+  <section id="education" class="section gray">
+    <h2 class="section-title">Education</h2>
+
+    <div class="timeline">
+
+      <div class="timeline-item">
+        <h3>MCA (Currently Pursuing)</h3>
+        <p>Mother Theresa Institute of Computer Applications, Palamaner</p>
+      </div>
+
+      <div class="timeline-item">
+        <h3>BCA (2024)</h3>
+        <p>Mother Theresa Degree College, Palamaner</p>
+      </div>
+
+      <div class="timeline-item">
+        <h3>Intermediate (MEC) - 2021</h3>
+        <p>Sri Sai Chainthanya Junior College, Palamaner</p>
+      </div>
+
+      <div class="timeline-item">
+        <h3>SSC - 2019</h3>
+        <p>Z.P. High School, Nidigunta</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Internship -->
+  <section class="section">
+    <h2 class="section-title">Internship</h2>
+
+    <div class="internship-card">
+      <h3>Python Full Stack Intern - QSpiders (Bangalore)</h3>
+      <p><b>Duration:</b> Feb 2024 – July 2024</p>
+      <ul>
+        <li>Completed Python Full Stack program with real-time projects.</li>
+        <li>Worked on front-end and back-end web development.</li>
+        <li>Built applications using JavaScript, HTML, CSS, Python.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="section gray">
+    <h2 class="section-title">Contact Me</h2>
+
+    <div class="contact-container">
+      <form class="contact-form" onsubmit="sendMessage(event)">
+        <input type="text" id="name" placeholder="Your Name" required />
+        <input type="email" id="email" placeholder="Your Email" required />
+        <textarea id="message" placeholder="Your Message" required></textarea>
+        <button type="submit" class="btn primary">Send Message</button>
+      </form>
+
+      <div class="contact-info">
+        <h3>Get in Touch</h3>
+        <p><b>Email:</b> upendra3714@gmail.com</p>
+        <p><b>Phone:</b> +91 9347908285</p>
+        <p><b>LinkedIn:</b> <a href="https://www.linkedin.com/in/erukala-upendra-a592ab288" target="_blank">View Profile</a></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>© 2026 Erukala Upendra | Portfolio Website</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
